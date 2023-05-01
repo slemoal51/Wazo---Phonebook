@@ -1,0 +1,104 @@
+/* Styles pour agrandir les champs de texte des colonnes 3 et 4 */
+.large-input {
+	width: 300px;
+}
+/* Styles pour le tableau */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #F8F8F8;
+}
+h1 {
+	text-align: center;
+	color: #333;
+}
+table {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	background-color: #FFF;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+th, td {
+	padding: 10px;
+	text-align: left;
+}
+th {
+	background-color: #333;
+	color: #FFF;
+}
+tr:nth-child(even) {
+	background-color: #F8F8F8;
+}
+tr:hover {
+	background-color: #EAEAEA;
+}
+input[type="submit"] {
+	display: block;
+	margin: 20px auto;
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #FFF;
+	background-color: #333;
+	border: none;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: #555;
+}
+.readonly {
+	background-color: #F8F8F8;
+	color: #999;
+}
+.copy-btn {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	padding: 5px 10px;
+	background-color: #333;
+	color: #FFF;
+	border: none;
+	cursor: pointer;
+}
+.copy-btn:hover {
+	background-color: #555;
+}
+/* Style pour les onglets */
+.tab {
+	overflow: hidden;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	background-color: #f9f9f9;
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+
+.tab button:hover {
+	background-color: #ddd;
+}
+
+.tab button.active {
+	background-color: #ccc;
+}
+
+/* Style pour le contenu des onglets */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+/* Style pour l'onglet actif par défaut */
+.tabcontent:first-child {
+	display: block;
+}
